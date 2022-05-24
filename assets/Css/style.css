@@ -1,24 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;800&display=swap');
 
-.nav-menu{
+body {
+    margin: 0px;
+}
+
+/* Header */
+.nav-menu {
+    width: 1100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 80px;
 }
 
-.menu{
+.menu {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 40px;
+    margin: 0px;
 }
 
-.menu a{
+.menu a {
+    display: inline-block;
     text-decoration: none;
     color: black;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 60px;
+
+}
+
+/* Introdução */
+.introducao {
+    max-width: 1100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 120px;
+    margin: 0 auto;
+}
+
+.img-perfil {
+
+    width: 360px;
+    height: 520px;
+}
+
+.titulo h1 {
+    width: 12ch;
+    font-size: 72px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    line-height: 80px;
+    margin: 0px;
+    position: relative;
+
+}
+
+.titulo h1::before {
+    content: "";
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    z-index: -1;
+    background-image: url(/assets/Img/detalhe.svg);
+}
+
+.titulo p {
+    font-size: 24px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    line-height: 28.8px;
 }
