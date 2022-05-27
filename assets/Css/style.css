@@ -7,6 +7,7 @@
     --black: #292929;
     --white: #ffffff;
     --formacao-texto: #A3A3A3;
+    --brancoh3: #8F8F8F;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Fira Sans';
+    overflow-x: hidden;
 
 }
 
@@ -239,15 +241,17 @@ body {
 /* Formação */
 .div-formacao {
     background-color: var(--black);
+    height: 958px;
 }
 
 .formacao {
 
     margin: 0 auto;
     width: 1100px;
-    height: 958px;
+    height: 378px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
 }
 
 .formacao-titulo h1 {
@@ -259,11 +263,16 @@ body {
     font-size: 144px;
     font-weight: 700;
     line-height: 144px;
-    margin: 0px;
+    margin-top: 105px;
+    margin-right: 60px;
 }
 
 .formacao-info {
     grid-column: 2;
+    margin-top: 121px;
+    height: 800px;
+    /* border: 5px solid red */
+
 }
 
 .formacao-info p {
@@ -272,6 +281,9 @@ body {
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
+    width: 523px;
+    height: 128px;
+    margin-bottom: 60px;
 }
 
 .formacao-info strong {
@@ -281,14 +293,15 @@ body {
 
 .formacao-cards {
     display: grid;
-    
+
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
 }
 
 .formacao-card-item {
     background-color: #000;
-    width: 204px;
+    width: 180px;
+    height: 170px;
     padding: 20px;
     border-radius: 10px;
     display: grid;
@@ -296,23 +309,142 @@ body {
 
 }
 
+
 .formacao-card-item h3 {
     color: var(--formacao-texto);
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.formacao-card-item p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    line-height: 20px;
 }
 
 .formacao-card-item h2 {
     color: var(--white);
-    /* margin-left: 20px; */
+    width: 140px;
+    font-size: 24px;
+    line-height: 25px;
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    position: relative;
 }
 
-.formacao-card-item p{
-    margin-bottom: 0px;
+.formacao-card-item h2::before {
+    content: "";
+    background-image: url(/assets/Img/Rectangle\ 31.svg);
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    left: -23px;
+    top: 4px;
+    z-index: 3;
 }
 
-.formacao-card-item h2{
+.formacao-card-item .user {
+    width: 200px;
+
+}
+
+.info-extra-item {
+    display: flex;
+    align-items: flex-start;
+
+    flex-direction: column;
+    width: 696px;
+
+    /* border: 5px solid green; */
+
+    margin-top: 58px;
+
+
+}
+
+.info-extra-item h3 {
+    color: var(--brancoh3);
+    position: relative;
+}
+
+.info-extra-item h3::before {
+    content: "";
+    background-image: url(/assets/Img/cursos.svg);
+    width: 24px;
+    height: 28px;
+    position: absolute;
+    left: -40px;
+    top: -1px;
+}
+
+.cursos {
+    display: flex;
+}
+
+.cursos p {
+    height: 50px;
+
+    display: inline-block;
+    margin: 0px;
     color: var(--white);
-    width: 140px
+}
+
+.idioma h3 {
+    color: var(--brancoh3);
+    position: relative;
+}
+
+.idioma h3::before {
+    content: "";
+    background-image: url("/assets/Img/idiomas.svg");
+    width: 24px;
+    height: 28px;
+    position: absolute;
+    left: -38px;
+    top: -1px;
+}
+
+
+
+.idioma p {
+    margin: 0px;
+    height: 50px;
+    color: var(--white);
+}
+
+/* footer */
+
+footer {
+
+    background-color: black;
+    color: white;
+
+    display: grid;
+    grid-template-columns: 429px 200px;
+    justify-content: center;
+    align-items: baseline;
+    column-gap: 250px;
+}
+
+.descricao {
+    width: 429px;
+    height: 96px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 130px;
+
+}
+
+.contato {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.rodape {
+    margin-bottom: 60px;
 }
