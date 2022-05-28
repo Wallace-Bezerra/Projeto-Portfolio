@@ -1,0 +1,286 @@
+.div-formacao {
+    background-color: var(--black);
+    max-width: 100vw;
+}
+
+.formacao-info {
+    margin: 0 auto;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-bottom: 60px;
+}
+
+.formacao-titulo {
+    grid-row: 1/3;
+}
+
+.formacao-titulo h1 {
+    word-wrap: break-word;
+    text-transform: uppercase;
+    max-width: 5ch;
+    font-size: 144px;
+    font-weight: 700;
+    line-height: 144px;
+    margin-top: 80px;
+    margin-right: 60px;
+}
+
+.formacao-info p {
+    color: var(--formacao-texto);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 60px;
+}
+
+.formacao-info strong {
+    color: #fff;
+    font-weight: 700;
+}
+
+.info-descricao {
+    margin-top: 80px;
+    max-width: 60ch;
+}
+
+.formacao-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    grid-column: 2;
+    max-width: 600px;
+
+}
+
+.formacao-card-item {
+    background-color: #000;
+    max-width: 180px;
+    max-height: 170px;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    justify-content: start;
+}
+
+.formacao-card-item h3 {
+    color: var(--formacao-texto);
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.formacao-card-item p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.formacao-card-item h2 {
+    color: var(--white);
+    max-width: 140px;
+    font-size: 24px;
+    line-height: 25px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.formacao-card-item h2::before {
+    content: "";
+    background-image: url(/assets/Img/Rectangle\ 31.svg);
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    left: -23px;
+    top: 4px;
+    z-index: 3;
+}
+
+.formacao-card-item .user {
+    max-width: 150px;
+    margin-bottom: 18px;
+
+}
+
+.info-extra-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 58px;
+    grid-column: 2;
+    max-width: 600px;
+}
+
+.info-extra-item h3 {
+    color: var(--brancoh3);
+    position: relative;
+    text-transform: uppercase;
+}
+
+.info-extra-item h3::before {
+    content: "";
+    background-image: url(/assets/Img/cursos.svg);
+    width: 24px;
+    height: 28px;
+    position: absolute;
+    left: -40px;
+    top: -1px;
+}
+
+.cursos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cursos p {
+    height: 50px;
+    display: inline-block;
+    margin: 0px;
+    color: var(--white);
+}
+
+.idioma {
+    max-width: 600px;
+    grid-row: 4;
+    grid-column: 2;
+
+}
+
+.idioma h3 {
+    color: var(--brancoh3);
+    position: relative;
+    text-transform: uppercase;
+}
+
+.idioma h3::before {
+    content: "";
+    background-image: url("/assets/Img/idiomas.svg");
+    max-width: 24px;
+    width: 24px;
+    height: 28px;
+    max-height: 28px;
+    position: absolute;
+    left: -38px;
+    top: -1px;
+}
+
+.idioma p {
+    margin: 0px;
+    height: 50px;
+    color: var(--white);
+}
+
+p.p-cinza,
+span.p-cinza {
+    color: var(--brancoh3)
+}
+
+@media (max-width:1100px) {
+    .formacao-info {
+        align-items: center;
+        justify-items: center;
+        grid-template-rows: auto;
+
+    }
+
+    .formacao-titulo {
+        grid-row: auto;
+    }
+
+    .formacao-titulo h1 {
+        margin-bottom: 30px;
+    }
+
+    .formacao-cards {
+        grid-column: 1/-1;
+        grid-row: 2;
+
+    }
+
+    .info-extra-item {
+        grid-column: 1/2;
+        grid-row: 3;
+        max-width: 600px;
+    }
+
+    .idioma {
+        margin-top: 58px;
+        grid-row: 3;
+        grid-column: 2/3;
+
+    }
+}
+
+@media (max-width:910px) {
+    .formacao-info {
+        grid-template-columns: 1fr;
+    }
+
+    .formacao-titulo {
+        text-align: center;
+    }
+
+    .formacao-titulo h1 {
+        word-break: normal;
+        max-width: 800px;
+        margin-right: 0px;
+        font-size: 110px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+
+    .info-descricao {
+        grid-row: 2;
+    }
+
+    .formacao-cards {
+        grid-row: 3;
+    }
+
+    .info-extra-item {
+        grid-row: 4;
+        width: 600px;
+        max-width: 600px;
+    }
+
+    .idioma {
+        max-width: 600px;
+        width: 600px;
+        grid-row: 5;
+        grid-column: 1;
+    }
+}
+
+@media (max-width:645px) {
+    .formacao-titulo h1 {
+        font-size: 60px;
+    }
+
+    .formacao-cards {
+        flex-direction: column;
+    }
+
+    .info-extra-item {
+        grid-row: 4;
+        width: auto;
+    }
+
+    .cursos {
+        flex-direction: column;
+    }
+
+    .idioma {
+        width: auto;
+        grid-row: 5;
+        grid-column: 1;
+    }
+}
