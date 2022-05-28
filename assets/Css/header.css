@@ -49,10 +49,12 @@ header {
     transition: 0.9s;
 }
 
-.menu a:hover.menu-item::after {
-    transform: translateY(-16px);
-    opacity: 1;
-    transition: 0.9s;
+@media(min-width:970px) {
+    .menu a:hover.menu-item::after {
+        transform: translateY(-16px);
+        opacity: 1;
+        transition: 0.9s;
+    }
 }
 
 @media (max-width:970px) {

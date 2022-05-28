@@ -213,6 +213,10 @@ span.p-cinza {
         max-width: 60.0rem;
     }
 
+    .cursos {
+        gap: 35px;
+    }
+
     .idioma {
         margin-top: 5.8rem;
         grid-row: 3;
