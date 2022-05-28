@@ -5,11 +5,11 @@
 
 .formacao-info {
     margin: 0 auto;
-    max-width: 1100px;
+    max-width: 110.0rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding-bottom: 60px;
+    padding-bottom: 6.0rem;
 }
 
 .formacao-titulo {
@@ -20,20 +20,20 @@
     word-wrap: break-word;
     text-transform: uppercase;
     max-width: 5ch;
-    font-size: 144px;
+    font-size: 14.4rem;
     font-weight: 700;
-    line-height: 144px;
-    margin-top: 80px;
-    margin-right: 60px;
+    line-height: 4.4remx;
+    margin-top: 8.0rem;
+    margin-right: 6.0rem;
 }
 
 .formacao-info p {
     color: var(--formacao-texto);
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 60px;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin-bottom: 6.0rem;
 }
 
 .formacao-info strong {
@@ -42,68 +42,69 @@
 }
 
 .info-descricao {
-    margin-top: 80px;
+    margin-top: 8.0rem;
     max-width: 60ch;
+
 }
 
 .formacao-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 2.5rem;
     grid-column: 2;
-    max-width: 600px;
+    max-width: 60.0rem;
 
 }
 
 .formacao-card-item {
     background-color: #000;
-    max-width: 180px;
-    max-height: 170px;
-    padding: 20px;
-    border-radius: 10px;
+    max-width: 18.0rem;
+    max-height: 17.0rem;
+    padding: 2.0rem;
+    border-radius: 1.0rem;
     display: grid;
     justify-content: start;
 }
 
 .formacao-card-item h3 {
     color: var(--formacao-texto);
-    margin-top: 0px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 20px;
+    margin-top: 0rem;
+    margin-bottom: 2.0rem;
+    font-size: 1.4rem;
+    line-height: 2.0rem;
 }
 
 .formacao-card-item p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 24px;
-    line-height: 20px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    font-size: 2.4rem;
+    line-height: 2.0rem;
 }
 
 .formacao-card-item h2 {
     color: var(--white);
-    max-width: 140px;
-    font-size: 24px;
-    line-height: 25px;
-    margin-top: 0px;
-    margin-bottom: 40px;
+    max-width: 14.0rem;
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    margin-top: 0rem;
+    margin-bottom: 4.0rem;
     position: relative;
 }
 
 .formacao-card-item h2::before {
     content: "";
     background-image: url(/assets/Img/Rectangle\ 31.svg);
-    width: 4px;
-    height: 20px;
+    width: 0.4rem;
+    height: 2.0rem;
     position: absolute;
-    left: -23px;
-    top: 4px;
+    left: -2.3rem;
+    top: 0.4rem;
     z-index: 3;
 }
 
 .formacao-card-item .user {
-    max-width: 150px;
-    margin-bottom: 18px;
+    max-width: 15.0rem;
+    margin-bottom: 1.8rem;
 
 }
 
@@ -113,9 +114,9 @@
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 58px;
+    margin-top: 5.8rem;
     grid-column: 2;
-    max-width: 600px;
+    max-width: 60.0rem;
 }
 
 .info-extra-item h3 {
@@ -127,11 +128,11 @@
 .info-extra-item h3::before {
     content: "";
     background-image: url(/assets/Img/cursos.svg);
-    width: 24px;
-    height: 28px;
+    width: 2.4rem;
+    height: 2.8rem;
     position: absolute;
-    left: -40px;
-    top: -1px;
+    left: -4.0rem;
+    top: -0.1rem;
 }
 
 .cursos {
@@ -142,14 +143,14 @@
 }
 
 .cursos p {
-    height: 50px;
+    height: 5.0rem;
     display: inline-block;
-    margin: 0px;
+    margin: 0rem;
     color: var(--white);
 }
 
 .idioma {
-    max-width: 600px;
+    max-width: 60.0rem;
     grid-row: 4;
     grid-column: 2;
 
@@ -164,18 +165,18 @@
 .idioma h3::before {
     content: "";
     background-image: url("/assets/Img/idiomas.svg");
-    max-width: 24px;
-    width: 24px;
-    height: 28px;
-    max-height: 28px;
+    max-width: 2.4rem;
+    width: 2.4rem;
+    height: 2.8rem;
+    max-height: 2.8rem;
     position: absolute;
-    left: -38px;
-    top: -1px;
+    left: -3.8rem;
+    top: -0.1rem;
 }
 
 .idioma p {
-    margin: 0px;
-    height: 50px;
+    margin: 0rem;
+    height: 5.0rem;
     color: var(--white);
 }
 
@@ -197,7 +198,7 @@ span.p-cinza {
     }
 
     .formacao-titulo h1 {
-        margin-bottom: 30px;
+        margin-bottom: 3.0rem;
     }
 
     .formacao-cards {
@@ -209,11 +210,11 @@ span.p-cinza {
     .info-extra-item {
         grid-column: 1/2;
         grid-row: 3;
-        max-width: 600px;
+        max-width: 60.0rem;
     }
 
     .idioma {
-        margin-top: 58px;
+        margin-top: 5.8rem;
         grid-row: 3;
         grid-column: 2/3;
 
@@ -231,15 +232,16 @@ span.p-cinza {
 
     .formacao-titulo h1 {
         word-break: normal;
-        max-width: 800px;
-        margin-right: 0px;
-        font-size: 110px;
+        max-width: 80.0rem;
+        margin-right: 0rem;
+        font-size: 11.0rem;
         font-weight: 700;
-        line-height: 60px;
+        line-height: 6.0rem;
     }
 
     .info-descricao {
         grid-row: 2;
+        padding-inline: 30px;
     }
 
     .formacao-cards {
@@ -248,13 +250,13 @@ span.p-cinza {
 
     .info-extra-item {
         grid-row: 4;
-        width: 600px;
-        max-width: 600px;
+        width: 60.0rem;
+        max-width: 60.0rem;
     }
 
     .idioma {
-        max-width: 600px;
-        width: 600px;
+        max-width: 60.0rem;
+        width: 60.0rem;
         grid-row: 5;
         grid-column: 1;
     }
@@ -262,7 +264,7 @@ span.p-cinza {
 
 @media (max-width:645px) {
     .formacao-titulo h1 {
-        font-size: 60px;
+        font-size: 6.0rem;
     }
 
     .formacao-cards {

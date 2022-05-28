@@ -1,5 +1,5 @@
 .introducao {
-    max-width: 1100px;
+    max-width: 110rem;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -10,44 +10,44 @@
 }
 
 .perfil-img {
-    max-width: 360px;
+    max-width: 36.0rem;
 }
 
 .titulo h1 {
-    max-width: 1200px;
-    font-size: 72px;
+    max-width: 120.0rem;
+    font-size: 7.2rem;
     font-weight: 700;
-    line-height: 80px;
+    line-height: 8.0rem;
     margin: 0px;
     position: relative;
 }
 
 .titulo h1::before {
     content: "";
-    width: 120px;
-    height: 120px;
+    width: 12.0rem;
+    height: 12.0rem;
     position: absolute;
-    top: -30px;
-    left: -30px;
+    top: -3.0rem;
+    left: -3.0rem;
     z-index: -1;
     background-image: url(/assets/Img/detalhe.svg);
 }
 
 .titulo p {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 400;
-    line-height: 28.8px;
+    line-height: 2.88rem;
 }
 
 @media(max-width:600px) {
     .introducao {
-        margin: 10px auto;
+        margin: 1.0rem auto;
         gap: 0px;
     }
 
     .titulo h1 {
-        font-size: 60px;
-        line-height: 70px;
+        font-size: 6.0rem;
+        line-height: 7.0rem;
     }
 
     .perfil-img {
@@ -57,19 +57,19 @@
 
 @media(max-width:522px) {
     .titulo h1 {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 4.0rem;
+        line-height: 5.0rem;
     }
 
     .titulo h1::before {
-        width: 60px;
-        height: 60px;
+        width: 6.0rem;
+        height: 6.0rem;
         background-size: cover;
-        top: -8px;
-        left: -16px;
+        top: -0.8rem;
+        left: -1.6rem;
     }
 
     .titulo p {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 }
