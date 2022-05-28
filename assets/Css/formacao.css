@@ -58,7 +58,7 @@
 
 .formacao-card-item {
     background-color: #000;
-    max-width: 18.0rem;
+    max-width: 20.0rem;
     max-height: 17.0rem;
     padding: 2.0rem;
     border-radius: 1.0rem;
@@ -285,4 +285,5 @@ span.p-cinza {
         grid-row: 5;
         grid-column: 1;
     }
+
 }
